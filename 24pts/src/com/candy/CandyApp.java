@@ -4,6 +4,7 @@ import com.candy.db.DAO;
 import com.candy.view.BlockView;
 
 import android.app.Application;
+import android.database.sqlite.SQLiteDatabase;
 
 public class CandyApp extends Application {
 	
@@ -31,9 +32,13 @@ public class CandyApp extends Application {
 	public void onCreate() {
 		super.onCreate();
 		app = this;
+
+		initDB();
+		
 		questions = getResources().getStringArray(R.array.question);
 		QUESTION_TOTAL = getResources().getInteger(R.integer.question_total);
 		flip_distance = getResources().getInteger(R.integer.flip_distance);
+		
 		int _curr = new DAO().currentLevel();
 		if(_curr >= QUESTION_TOTAL){
 			position = 0;
@@ -68,6 +73,13 @@ public class CandyApp extends Application {
 	
 	public int currentPage(){
 		return position;
+	}
+	
+	private void initDB(){
+		SQLiteDatabase db = openOrCreateDatabase("candy.db", MODE_PRIVATE, null);
+		 db.execSQL("DROP TABLE IF EXISTS c_stat");
+		 db.execSQL("CREATE TABLE c_stat (id INTEGER PRIMARY KEY , _time decimal(8,2))");
+		 db.close();
 	}
 
 }
