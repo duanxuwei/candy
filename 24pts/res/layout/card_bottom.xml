@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="0dip"
+    android:padding="1dp" >
+    
+    <ImageView 
+    android:id="@+id/bottom_img"
+    android:gravity="center|center_vertical"
+    android:layout_gravity="center"
+    android:layout_width="14dp"
+    android:layout_height="14dp" 
+    android:src="@drawable/hei"
+    android:contentDescription="@string/card_color"/>
+    
+    <TextView 
+    android:id="@+id/bottom_num"
+    android:layout_marginTop="0dp"
+    android:gravity="center|center_vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="2dp"
+    android:padding="6dp" >
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="true"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:useDefaultMargins="true" >
+
+        <com.candy.view.BlockView
+            android:id="@+id/card1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_width="120dp"
+            android:layout_height="160dp" />
+
+        <com.candy.view.BlockView
+            android:id="@+id/card2"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_width="120dp"
+            android:layout_height="160dp" />
+
+        <com.candy.view.BlockView
+            android:id="@+id/card3"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_width="120dp"
+            android:layout_height="160dp" />
+
+        <com.candy.view.BlockView
+            android:id="@+id/card4"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_width="120dp"
+            android:layout_height="160dp" />
+
+    </GridLayout>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginBottom="2dp"
+	    android:padding="2dp" >
+    
+	    <!-- <ImageView 
+		    android:id="@+id/bottom_left"
+		    android:gravity="center|center_vertical"
+		    android:layout_gravity="center"
+		    android:layout_marginTop="3dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:src="@drawable/hei"
+		    android:contentDescription="@string/card_color"/> -->
+    
+	    <ImageView 
+		    android:id="@+id/bottom_reset"
+		    android:gravity="center|center_vertical"
+		    android:layout_gravity="center"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:clickable="true"
+		    android:src="@drawable/reset"
+		    android:contentDescription="@string/card_color"/>
+     </LinearLayout>
+    
+
+</LinearLayout>

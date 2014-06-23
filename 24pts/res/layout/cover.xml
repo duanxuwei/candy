@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableRow>
+        
+    <com.candy.view.CoverItemView
+        android:id="@+id/split1"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center"/>
+    <com.candy.view.CoverItemView
+        android:id="@+id/split2"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center"/>
+    </TableRow>
+    
+    <TableRow>
+    <com.candy.view.CoverItemView
+        android:id="@+id/split3"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center" />
+    <com.candy.view.CoverItemView
+        android:id="@+id/split4"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center|center_horizontal"
+        android:gravity="center" />
+    </TableRow>
+
+</TableLayout>

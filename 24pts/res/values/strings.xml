@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="app_name">24pts</string>
+
+    <string name="card_color">花色</string>
+    
+    <!-- 滑动最小距离 -->
+    <integer name="flip_distance">50</integer>
+    
+    <!-- 题目总数 -->
+    <integer name="question_total">1362</integer>
+    <string name="placeholder">我就是一个占位符我就是一个占位符我就是一个占位符</string>
+
+</resources>
