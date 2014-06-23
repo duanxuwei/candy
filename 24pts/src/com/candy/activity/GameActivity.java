@@ -39,11 +39,6 @@ public class GameActivity extends Activity implements
 		@Override
 		public boolean onLongClick(View view) {
 			
-			//标记游戏开始时间戳
-			if(startTime == 0){
-				startTime = System.currentTimeMillis();
-			}
-			
 			ClipData.Item item = new ClipData.Item((CharSequence)view.getTag());
 			String[] mimeTypes = { ClipDescription.MIMETYPE_TEXT_PLAIN };
 			ClipData data = new ClipData(view.getTag().toString(), mimeTypes, item);
@@ -81,6 +76,11 @@ public class GameActivity extends Activity implements
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.game);
+		
+		//标记游戏开始时间戳
+		if(startTime == 0){
+			startTime = System.currentTimeMillis();
+		}
 		
 		card1 = (BlockView) findViewById(R.id.card1);
 		card2 = (BlockView) findViewById(R.id.card2);
